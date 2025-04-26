@@ -90,3 +90,21 @@ command: git reset --soft HEAD~1
 * soft : Moves the HEAD pointer back to the specified commit,it Keeps all changes on local only removes commit,keep all changes in stage area. 
 * mixed: Unstages all changes , Keeps changes in working directory
 * hard :  Moves the HEAD pointer back to the specified commit,Removes all changes from staging area,Removes all changes from working directory
+
+### connect local repot with remote 
+
+* git remote add upstream https://github.com/original/repo.git
+
+* git push -u origin main 
+    ```
+    -u: Sets a tracking relationship between your local branch and a remote branch
+    ```
+
+### GitHub
+GitHub is a cloud-based Git repository hosting platform used for version control, collaboration, and CI/CD automation
+
+### difference between git fetch and git pull
+
+* Git Fetch: it download latest code from remote repository to our local working directory ,but it does not merge downloaded codes with our local working directory code.it gives us option to review downloaded code and working directory code and meger if needed.
+
+* Git pull: it download latest code from remote repository and merge with working directory on local.
